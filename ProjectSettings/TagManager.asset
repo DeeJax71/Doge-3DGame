@@ -12,6 +12,13 @@ TagManager:
   - Ground
   - Middle Color Change
   - Checkpoint
+  - Obstacle2
+  - MazeWalls
+  - SphereSpawner
+  - Sphere
+  - SphereDespawn
+  - Obstacle4
+  - Obstacle3
   layers:
   - Default
   - TransparentFX
