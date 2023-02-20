@@ -27,16 +27,18 @@ public class Score : MonoBehaviour
 
         if (Time.timeScale == 0f)
         {
-            int scoreMinutes = Convert.ToInt32(minutes) + 2;
+            int scoreMinutes = Convert.ToInt32(minutes) * 60;
             int scoreSeconds = Convert.ToInt32(seconds);
-            int finalScore = (scoreMinutes * scoreSeconds) / 60* 500;
+            float finalScore = ((float)scoreMinutes * (float)scoreSeconds) / 30* 500;
+
+            Math.Round((Decimal)finalScore, 3, MidpointRounding.AwayFromZero);
 
             Debug.Log(minutes);
                 Debug.Log(seconds);
             Debug.Log(scoreMinutes);
             Debug.Log(scoreSeconds);
             Debug.Log(finalScore);
-            endScreenText.text = finalScore.ToString();
+            endScreenText.text = finalScore.ToString() + " points!";
         }
     }
 }

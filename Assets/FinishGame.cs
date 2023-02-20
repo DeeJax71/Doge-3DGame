@@ -24,6 +24,7 @@ public class FinishGame : MonoBehaviour
     public void EndGame()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Time.timeScale = 1;
     }
 
     private void OnTriggerEnter(Collider other)
