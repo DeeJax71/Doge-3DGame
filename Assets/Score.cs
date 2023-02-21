@@ -39,7 +39,7 @@ public class Score : MonoBehaviour
             }
             else
             {
-                finalScore = ((float)scoreSeconds) / 30 * 600;
+                finalScore = ((float)scoreSeconds) / 30 * 8400;
 
                 Math.Round((Decimal)finalScore, 0, MidpointRounding.AwayFromZero);
             }
